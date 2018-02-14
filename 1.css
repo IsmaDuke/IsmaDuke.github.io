@@ -1,0 +1,100 @@
+/* Trajetas nuevas */
+
+.tarjeta {
+    
+    width: 300px;
+    height: 400px;
+    box-shadow: 2px 2px 4px crimson;
+    padding: 10px;
+    margin: 20px;
+    background-color: white
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.imagen {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding-right: 15px;
+    padding-top: 10px
+}
+
+.imagen img {
+     height: 200px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #666666;
+}
+
+.btn {
+    background: -webkit-linear-gradient(top, crimson, red);
+    color: black;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border-bottom: 4px solid rgb(168, 3, 36);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 18px;
+    align-items: center;
+}
+
+.direccion a {
+    margin-top: 20px
+}
+.btn:hover {
+    background-color: 4px solid rgb(168, 3, 36)
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    width: 280px
+}
+
+.direccion p:first-child {
+    color: black;
+    font-weight: bold;
+}
+
+
+.direccion {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+    padding-top: 10px
+
+}
+
+.contenedor { /*grid para localizacion automatica de filas y columnas*/
+    display: flex;
+    grid-template-columns: repeat(auto-fit, 300px); /*auto-fit crea tantas columnas como necesitamos del ancho especificado*/
+    grid-template-rows: repeat(4, 400px);
+    grid-gap: 40px;
+    justify-content: space-around;
+}
+.nuevo {
+    background-color: #DC143C;
+    color: white;
+}
+.calle {
+    height: 80px;
+}
