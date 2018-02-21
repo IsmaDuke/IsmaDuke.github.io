@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./CSS/estilos.css">
     <style>@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,400i,700|Abril+Fatface:400');</style>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="./JS/Libreria JS/jquery-3.3.1.min.js"></script>
+    <script src="./JS/main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,400i,700" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -17,11 +19,22 @@
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body>
+<body id="top">
     <header>
             <p class="burger">
                     <i class="fas fa-bars"></i>
                 </p>
+                <div class="menu">
+                    <p class="cerrar">
+                            <i class="far fa-window-close"></i>
+                    </p>
+                    <div>
+                    <a href="/" class="activo">Inicio</a>
+                    <a href="alquiler.html">Alquiler</a>
+                    <a href="adquisicion.html">Adquisicion</a>
+                    <a href="contacto.html">Contacto</a>
+                    </div>   
+                </div>
         <a href="index.html" class="logo"><img src="./img/18f6be93175fe25d1d5faf56fcb1a652-european-house-si.svg" alt="Veretis"></a>
         
         <h1>VERETIS</h1>
@@ -88,6 +101,9 @@
     </div>
 </div>
 <footer>
+        <a href="#top" class="top">
+                <i class="fas fa-arrow-circle-up"></i>
+               </a>
             <div class="col1 izquierda">
                     <p>VETERIS S.A. </p>
                     <p><i class="fas fa-map-pin"></i>  Plaza de la Merced, 1</p>

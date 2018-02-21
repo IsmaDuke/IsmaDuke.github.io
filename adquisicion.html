@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./CSS/estilos.css">
     <style>@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,400i,700|Abril+Fatface:400');</style>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="./JS/Libreria JS/jquery-3.3.1.min.js"></script>
+    <script src="./JS/main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,400i,700" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -17,11 +19,24 @@
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body>
-    <header>
-            <p class="burger">
-                    <i class="fas fa-bars"></i>
-                </p>
+<body id="top">
+        <header class="normal" >
+            <div class="burger2">
+                <div class="barra arriba"></div>
+                <div class="barra media"></div>
+                <div class="barra abajo"></div>
+            </div>
+            <div class="menu2">
+                <div class="todo">
+                    <div class="enlaces">
+                <a href="index.html" class="activo">Inicio</a>
+                <a href="alquiler.html">Alquiler</a>
+                <a href="adquisicion.html"  class="activo">Adquisicion</a>
+                <a href="contacto.html">Contacto</a>
+                  </div>
+                    <p>Siguenos en <i class="fab fa-facebook-square"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></p>
+            </div>
+        </div>
         <a href="index.html" class="logo"><img src="./img/18f6be93175fe25d1d5faf56fcb1a652-european-house-si.svg" alt="Veretis"></a>
         
         <h1>VERETIS</h1>
@@ -221,6 +236,9 @@
          <a href="#" class="derecha2">Siguiente</a>
          </div> 
     <footer>
+            <a href="#top" class="top">
+                    <i class="fas fa-arrow-circle-up"></i>
+                   </a>
             <div class="col1 izquierda">
                     <p>VETERIS S.A. </p>
                     <p><i class="fas fa-map-pin"></i>  Plaza de la Merced, 1</p>
@@ -230,9 +248,9 @@
                         </div>
                     <div class="col1 centro">
                         <div>
-                                <a href="index.html" class="activo">Inicio</a>
+                                <a href="index.html">Inicio</a>
                                 <a href="alquiler.html">Alquiler</a>
-                                <a href="adquisicion.html">Adquisición</a>
+                                <a href="adquisicion.html" class="activo">Adquisición</a>
                                 <a href="contacto.html">Contacto</a>
                     </div>
                     <div class="aviso">

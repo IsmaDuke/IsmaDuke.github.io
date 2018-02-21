@@ -42,6 +42,200 @@ header {
     box-shadow: 5px 5px 3px #DC143C;
 }
 
+.normal {
+    box-shadow: 0px 4px 8px gray;
+    background-image: 
+    radial-gradient(circle at 100% 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, white 10%, silver 11%, silver 23%, white 24%, white 30%, silver 31%, silver 43%, white 44%, white 50%, silver 51%, silver 63%, white 64%, white 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent),
+    radial-gradient(circle at 0    50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent);
+    position: fixed;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 20px;
+    position: fixed;
+    top:0;
+    width: 100%;
+    transition: all 500ms;
+}
+
+.logo-naranja {
+    display: none;
+}
+/* menu Hamburguesa */
+header .burger {
+    display: none;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+}
+.normal .burger {
+    color: #3f3f3f
+}
+
+.menu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 80%;
+    height: 100vh;
+    background-color: #969393;
+    display: none;
+    z-index: 10;
+}
+
+.menu div{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: flex-start;
+}
+
+.menu a {
+    color: rgb(10, 10, 10);
+    padding: 10px;
+    text-decoration: none;
+}
+
+.menu div a {
+    color: rgb(27, 26, 26);
+    padding: 10px;
+    width: 100%;
+}
+
+.menu div a:hover {
+    background-color: crimson;
+}
+
+.menu div a.activo {
+    background-color: crimson;
+}
+
+.cerrar {
+    font-size: 36px;
+    padding: 20px;
+}
+
+/* Menu Hamburguesa 2 */
+
+.burger2 {
+    display: none;
+}
+
+
+.barra {
+    height: 4px;
+    width: 30px;
+    margin: 6px auto;
+    background-color: crimson;
+}
+
+.arriba, .media, .abajo {
+    transition: all 700ms ease;
+}
+
+.menu2 {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 80%;
+    height: calc( 100vh - 100px);
+    background-color: rgb(207, 204, 204);
+    z-index: 10;
+    display: none;
+    box-shadow: 4px 0px 8px grey;
+}
+
+.todo {
+     height: calc( 100vh - 105px);
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     white-space: nowrap;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu2 a {
+    width: 100%;
+    padding: 10px 0 10px 20px;
+    transform: translateX(-200px);
+}
+
+.menu2 a:nth-child(1) {
+    transition: transform 500ms ease-in-out;
+}
+
+.menu2 a:nth-child(2) {
+    transition: transform 700ms ease-in-out;
+}
+
+.menu2 a:nth-child(3) {
+    transition: transform 900ms ease-in-out;
+}
+
+.menu2 a:nth-child(4) {
+    transition: transform 1100ms ease-in-out;
+}
+
+.menu2 a:nth-child(5) {
+    transition: transform 1300ms ease-in-out;
+}
+
+.menu2 a.aparicion {
+    transform: translateX(0px);
+}
+
+.burger2.abierto .arriba {
+    transform: translateY(10px)  rotateZ(45deg)    
+}
+
+.burger2.abierto .media {
+    width: 0;
+}
+
+.burger2.abierto .abajo {
+    transform: translateY(-10px)  rotateZ(-45deg) 
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    padding: 10px;
+    background-color: grey
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover {
+    color: crimson;
+}
+
+a.activo {
+    color: rgb(238, 183, 65)
+}
+
+header nav ul li a {
+    color: black;
+
+}
+
 header .burger {
     display: none;
     font-size: 30px;
@@ -62,7 +256,7 @@ nav a {
 }
 
 a:hover {
-    color: rgb(228, 189, 189);
+    color: crimson;
 }
 
 a.activo {
@@ -273,7 +467,7 @@ footer p {
 }
 
 footer a {
-   color: black;
+   color: rgb(119, 116, 116);
 }
 
 footer a:hover {
@@ -326,6 +520,21 @@ footer a:hover {
     margin: 40px;
     justify-content: center;
     align-items: center
+}
+
+.top {
+    font-size: 40px;
+    position: absolute;
+    top: -40px;
+    right: 50%;
+    transform: translateX(50%);
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    display: flex;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
 }
 /* Formulario*/
 
@@ -745,6 +954,56 @@ justify-content: center;
  margin-top: 20px 
 }
 
+/* estilos para pagina javascrpt */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    opacity: 0;
+    transition: all 500ms ease;
+}
+
+.overlay.visible {
+    display: initial;
+    z-index: 20;
+    opacity: 1;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* width: 300px; */
+    transform: translate(-50%,-50%);
+    background-color: white;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 21;
+    transition: all 500ms ease;
+}
+
+.modal button {
+    align-self: center;
+}
+
+.modal p:first-child{
+    font-size: 36px;
+    color: crimson
+}
+
+.modal.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
 /*Media Queries*/
 
 @media (min-witdh: 1359px ) {
@@ -765,48 +1024,7 @@ justify-content: center;
     header .burger {
         display: initial;
     }
-    .hero h1 {
-        font-size: 36px;
-        text-align: center;
-    }
-    .hero h2 {
-        font-size: 26px;
-        text-align: center;
-    }
-    .columna img {
-        height: 160px;
-    }
-    .columna.boton {
-        margin: 40px;
-        font-size: 18px;
-        padding: 12px;
-        border-radius: 10px
-    }
-    .newsletter {
-        font-size: 24px;
-        text-align: center;
-    }
-    .boton_newsletter {
-        font-size: 18px;
-        padding: 12px;
-        border-radius: 10px;
-    }
-
-    .input_newsletter {
-        font-size: 20px;
-        padding: 15px;
-        border-radius: 10px
-        }
-    
-}
-}
-
-
-@media (max-width: 740px) {
-    nav {
-        display: none;
-    }
-    header .burger {
+    header .burger2 {
         display: initial;
     }
     .hero h1 {
@@ -844,33 +1062,47 @@ justify-content: center;
     
 }
 
-@media (max-width: 640px) {
-    .fila2 { 
-   flex-direction: column;
-   align-items: center;
-}
-    .separador {
-    display: initial;
-   }
-   .columna {
-       margin-top: 20px
-   }
-   .slogan {
-       font-size: 28px;
-   }
-   .col100 {
-       flex-direction: column;
-       align-items: center;
-   } 
-}
-   
-}
-@media (max-width: 420px) {
-    body {
-        font-size: 18px;
+
+@media (max-width: 740px) {
+    nav {
+        display: none;
     }
-    .fila2 {
-        margin: 20px 10px;
+    header .burger {
+        display: initial;
+    }
+    header .burger2 {
+        display: initial;
+    }
+    .hero h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    .hero h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+    .columna img {
+        height: 160px;
+    }
+    .columna.boton {
+        margin: 40px;
+        font-size: 18px;
+        padding: 12px;
+        border-radius: 10px
+    }
+    .newsletter {
+        font-size: 24px;
+        text-align: center;
+    }
+    .boton_newsletter {
+        font-size: 18px;
+        padding: 12px;
+        border-radius: 10px;
     }
 
+    .input_newsletter {
+        font-size: 20px;
+        padding: 15px;
+        border-radius: 10px
+        }
 }
